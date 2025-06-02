@@ -1,4 +1,10 @@
 function validateCard(numbers){
+	for (let counter = 0; counter < numbers.length; counter++){
+		if (isNaN(numbers[counter])){
+		let word = "String found";	
+		return word;	
+		}
+	}
 	if (numbers[0] == 4 && numbers.length == 16){		
 		let obj = {		
 		isValid : true,
@@ -43,6 +49,6 @@ function validateCard(numbers){
 	}
 }
 
-let myArray = [3,2,3,4,5,6,7,8,9,1,2,3,4,5,4];
+let myArray = ["a",2,3,4,5,6,7,8,9,1,2,3,4,5,4];
 console.log(validateCard(myArray));
 
