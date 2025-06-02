@@ -12,8 +12,14 @@ let wrongCount = 0;
 isRunning = true;
 while(isRunning){
 	//collect input
-	minuend = (Math.floor(Math.random() * 10) + 5);
-	subtrahend = (Math.floor(Math.random() * 5));
+	minuend = (Math.floor(Math.random() * 100) );
+	subtrahend = (Math.floor(Math.random() * 100));
+	if (subtrahend > minuend){
+		temp = subtrahend;
+		subtrahend = minuend;
+		minuend = temp;
+	}
+
 	newQuestionCount++;
 	result = minuend - subtrahend;
 	console.log(minuend + " - " + subtrahend + " :" );
