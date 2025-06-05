@@ -3,7 +3,7 @@ function shuffleQuestions(array){
 	let computersChoice = 0;
 	let temp = []
 	for(let counter = 0; counter < array.length; counter++){		
-		computersChoice = Math.floor(Math.random()*10);
+		computersChoice = Math.floor(Math.random()*9);
 		temp[0] = array[counter];
 		array[counter] = array[computersChoice];
 		array[computersChoice] = temp[0];
